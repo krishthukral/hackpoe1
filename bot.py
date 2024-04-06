@@ -40,8 +40,8 @@ class VideoMaker(fp.PoeBot):
             response = await self.fal_client.run(
                 "fal-ai/fast-sdxl",
                 arguments={
-                    "prompt": f"a realistic {prompt}, cinematic, ultra hd, high quality, video, cinematic, high quality",
-                    "negative_prompt": "illustraiton, cartoon, blurry, text, not cinematic",
+                    "prompt": f"cartoon comic of the us immagration {prompt} visa process ",
+                    "negative_prompt": "a realistic cinematic, ultra hd, high quality, video, cinematic, text",
                     "image_size": {
                         "height": 576,
                         "width": 1024,
@@ -102,3 +102,4 @@ if __name__ == "__main__":
     import uvicorn
 
     uvicorn.run(app, host="0.0.0.0", port=8080)
+    
